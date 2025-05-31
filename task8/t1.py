@@ -1,6 +1,8 @@
-surname = input("Enter surname: ")
-name = input("Enter name: ")
-middle_name = input("Enter middle_name: ")
+fullname = input("Enter full name: ")
+part = fullname.split()
+surname = part[0]
+name = part[1]
+middle_name = part[2]
 
 if len(surname) > len(name) and len(surname) > len(middle_name):
     print("Surname is longest")
